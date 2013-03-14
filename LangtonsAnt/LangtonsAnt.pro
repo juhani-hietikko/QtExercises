@@ -13,10 +13,8 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    antgrid.cpp
+        mainwindow.cpp
 
-HEADERS  += mainwindow.h \
-    antgrid.h
+HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui

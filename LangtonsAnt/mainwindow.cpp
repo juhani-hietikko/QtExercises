@@ -3,7 +3,7 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow), grid(10,10)
+    ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
@@ -17,7 +17,6 @@ MainWindow::MainWindow(QWidget *parent) :
             gridDisplay[i][j]->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
         }
     }
-    grid.placeAntToCell(5, 5, "up");
 
     updateDisplay();
 }
@@ -137,7 +136,7 @@ void MainWindow::setupGridArray()
 
 void MainWindow::advanceButtonClicked()
 {
-    grid.advance();
+    // TODO: tell model to advance.
     updateDisplay();
 }
 
@@ -146,7 +145,9 @@ void MainWindow::updateDisplay() {
     {
         for (int j = 0; j < 10; j++)
         {
-            if (grid.colorAtCell(i, j) == AntGrid::White)
+            bool cellIsWhite = true; // TODO:
+
+            if (cellIsWhite)
             {
                 gridDisplay[i][j]->setStyleSheet("QLabel { background-color : white; color : red; }");
             }
@@ -154,7 +155,11 @@ void MainWindow::updateDisplay() {
             {
                 gridDisplay[i][j]->setStyleSheet("QLabel { background-color : black; color : red; }");
             }
-            if (grid.cellStatusAt(i, j) != "")
+
+
+            bool cellContainsAnt = false; // TODO
+
+            if (cellContainsAnt)
             {
                 gridDisplay[i][j]->setText("A");
             }

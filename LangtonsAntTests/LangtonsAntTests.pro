@@ -15,7 +15,5 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 
-SOURCES += langtonsanttests.cpp ../LangtonsAnt/antgrid.cpp
-HEADERS += ../LangtonsAnt/antgrid.h
-INCLUDEPATH += ../LangtonsAnt
+SOURCES += langtonsanttests.cpp
 DEFINES += SRCDIR=\\\"$$PWD/\\\"

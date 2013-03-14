@@ -23,7 +23,6 @@ public slots:
 private:
     Ui::MainWindow *ui;
     QLabel* gridDisplay [10][10];
-    AntGrid grid;
 
     void setupGridArray();
     void updateDisplay();
