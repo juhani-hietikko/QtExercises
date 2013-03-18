@@ -1,0 +1,12 @@
+#ifndef FIZZBUZZ_GLOBAL_H
+#define FIZZBUZZ_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(FIZZBUZZ_LIBRARY)
+#  define FIZZBUZZSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define FIZZBUZZSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // FIZZBUZZ_GLOBAL_H
