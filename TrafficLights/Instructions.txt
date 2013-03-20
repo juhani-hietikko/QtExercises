@@ -1,0 +1,23 @@
+Traffic lights exercise
+=======================
+Implement a controller for a traffic light system with TDD. There is an API for controlling the hardware units (ITrafficLight and IPedestrianLight interfaces),
+the controller subsystem should use these interfaces.
+
+The controller subsystem that you implement must allow using some kind of clock signal as its input, by which it is aware of the passing of time.
+Simulate time in your tests.
+
+The traffic lights in this case will be installed to a crosswalk (i.e. a pedestrian crossing on a street). There are traffic lights for cars
+and pedestrian traffic lights for pedestrians. The following table specifies how the lights should be set to different states based on time passing:
+
+time (s)  |   car lights    |    pedestrian lights
+--------------------------------------------------
+0             green              red
+30            yellow             red
+33            red                green
+43            red                green (flashing)
+47            red+yellow         red
+50            green              red
+
+The above loop continues forever, 50 seconds is again equivalent to 0 seconds.
+
+Start by adding a new test project for your tests.

@@ -1,20 +1,22 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2013-03-18T10:37:27
+# Project created by QtCreator 2013-03-15T14:06:03
 #
 #-------------------------------------------------
 
 QT       -= gui
 
-TARGET = FizzBuzz
+TARGET = TrafficLights
 TEMPLATE = lib
 
-DEFINES += FIZZBUZZ_LIBRARY
+DEFINES += TRAFFICLIGHTS_LIBRARY
 
-SOURCES += fizzbuzz.cpp
+SOURCES +=
 
-HEADERS += fizzbuzz.h\
-        FizzBuzz_global.h
+HEADERS +=\
+    itrafficlight.h \
+    lightstatus.h \
+    ipedestrianlight.h
 
 unix:!symbian {
     maemo5 {

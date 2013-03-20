@@ -1,0 +1,11 @@
+FizzBuzz exercise
+=================
+Implement the FizzBuzz algorithm with TDD.
+
+Here's a description of the desired functionality:
+http://en.wikipedia.org/wiki/Fizz_buzz
+
+For example, input 1 should produce output "1"
+and input 3 should produce output "Fizz", etc.
+
+This project is for your implementation and another ready project is provided for your tests.

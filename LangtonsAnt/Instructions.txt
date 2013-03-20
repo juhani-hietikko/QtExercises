@@ -1,0 +1,16 @@
+Langton's ant exercise
+======================
+Implement a model for the Langton's ant cellular automaton with TDD.
+
+Here's a description of the desired functionality:
+http://en.wikipedia.org/wiki/Langton%27s_ant
+
+To be more precise:
+You need to implement a grid of cells, where each cell can be set either white or black initially.
+You should also be able to place an ant to some cell with some direction (up, right, down or left).
+And you should be able to step the system forward, which should move the ant and change cell colors according to the two rules described in wikipedia.
+
+We provide you with a crude GUI (mainwindow.cpp) which you can connect to your implementation (see TODO comments in mainwindow.cpp) to visualize how your implementation works!
+(This doesn't mean that you're allowed to replace writing automated tests by doing only manual testing, though!)
+
+This project is for your implementation and another ready project is provided for your tests.
